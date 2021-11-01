@@ -1,8 +1,16 @@
 <?php 
 require_once 'config.php';
 
-$dsn = "pgsql:host='127.0.0.1';port=5432;dbname='dbpython';";
-$pdo = new PDO($dsn,"postgres", "king.kian007", [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+
+	$db = parse_url(getenv("DATABASE_URL"));
+	$pdo = new PDO("pgsql:" . sprintf(
+		"host=%s;port=%s;user=%s;password=%s;dbname=%s",
+		$db["host"],
+		$db["port"],
+		$db["user"],
+		$db["pass"],
+		ltrim($db["path"], "/")
+	));
 
 function get_all(){
     global $pdo;
