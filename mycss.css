@@ -1,0 +1,23 @@
+
+
+#first_div {
+    background-color: pink;
+    width: 50%;
+    position: relative;
+    left: 300px;
+    overflow: auto;
+}
+
+p {
+    background-color: greenyellow;
+    
+}
+
+#rate {
+    background-color: blueviolet;
+    float: right;
+    border-radius: 30px;
+  position: relative;
+    bottom: 40px;
+    right: 10px;
+}
