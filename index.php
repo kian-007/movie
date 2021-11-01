@@ -49,8 +49,8 @@ function process_inputs(){
     <head>
         <meta charset="UTF-8">
         <title>php-movies</title>
-        <link href="mycss.css" rel="stylesheet" >
-        <link href="bootstrap.min.css" rel="stylesheet" >
+        <link href="<?php echo HOME_URL; ?>mycss.css" rel="stylesheet" >
+        <link href="<?php echo HOME_URL; ?>bootstrap.min.css" rel="stylesheet" >
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -114,8 +114,8 @@ function process_inputs(){
         }  ?>
         
         
-        
-        <<script src="bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <script src="<?php echo HOME_URL; ?>bootstrap.bundle.min.js"></script>
     </body>
 </html>
 

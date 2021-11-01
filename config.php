@@ -1,3 +1,3 @@
 <?php
 
-define('HOME_URL', 'http://localhost/php-movie/index.php');
+define('HOME_URL', 'https://php-movie.herokuapp.com/');
